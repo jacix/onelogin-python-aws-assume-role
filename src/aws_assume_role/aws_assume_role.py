@@ -657,7 +657,7 @@ def main():
                     print("Password found in config file or command line")
                 else:
                     if options.keychain_service:
-                        password = keyring.get_password(options.keychain_service,options.keychain_account)
+                        password = keyring.get_password(options.keychain_service, options.keychain_account)
                         if password is not None:
                             print("Password found in keychain")
                         else:
