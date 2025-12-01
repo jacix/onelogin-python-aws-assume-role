@@ -658,7 +658,7 @@ def main():
                     if options.keychain_service:
                         password = keyring.get_password(options.keychain_service, options.keychain_account)
                         if password is not None:
-                            print("Password found in keychain")
+                            pass
                         else:
                             print("Unable to find password in OSX keychain for account / service -> ", options.keychain_account, "/", options.keychain_service)
                 if password is None:
