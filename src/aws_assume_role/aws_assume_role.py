@@ -639,7 +639,7 @@ def main():
             print("OneLogin Username: ")
             username_or_email = sys.stdin.readline().strip()
 
-            password = getpass.getpass("\nOneLogin Password2: ")
+            password = getpass.getpass("\nOneLogin Password: ")
             ask_for_user_again = False
             ask_for_role_again = True
         elif result is None and missing_onelogin_data:
