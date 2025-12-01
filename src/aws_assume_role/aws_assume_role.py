@@ -260,7 +260,7 @@ def get_saml_response(client, username_or_email, password, app_id, onelogin_subd
                 elif client.error_description in ["Authentication Failed: Invalid user credentials",
                                                   "password is empty"]:
                     print(error_msg)
-                    password = getpass.getpass("\nOneLogin Password1: ")
+                    password = getpass.getpass("\nOneLogin Password: ")
                 elif client.error_description == "username is empty":
                     print(error_msg)
                     print("OneLogin Username: ")
