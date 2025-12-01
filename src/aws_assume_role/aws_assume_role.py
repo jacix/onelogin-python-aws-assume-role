@@ -663,7 +663,7 @@ def main():
                         else:
                             print("Unable to find password in OSX keychain for account / service -> ", options.keychain_account, "/", options.keychain_service)
                 if password is None:
-                    password = getpass.getpass("\nOneLogin Password3: ")
+                    password = getpass.getpass("\nOneLogin Password: ")
 
             if app_id is None:
                 if options.app_id:
